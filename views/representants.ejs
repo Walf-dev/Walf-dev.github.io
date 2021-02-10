@@ -11,7 +11,6 @@
 
 <body>
 <!-- partial:index.partial.html -->
-<%- include about %>
 
 <div id="app">
     <v-app id="inspire">
@@ -34,9 +33,9 @@
             <v-data-table :headers="headers" :items="villes" :search="search" :pagination.sync="pagination" :hide-headers="isMobile" :class="{mobile: isMobile}">
               <template slot="items" slot-scope="props">
                 <tr v-if="!isMobile">
-                  <td class="text-xs-right">{{ props.item.ville }}</td>
-                  <td class="text-xs-right">{{ props.item.representants }}</td>
-                  <td class="text-xs-right">{{ props.item.contacts }}</td>
+                  <td>{{ props.item.ville }}</td>
+                  <td>{{ props.item.representants }}</td>
+                  <td>{{ props.item.contacts }}</td>
                 </tr>
                 <tr v-else>
                   <td>
@@ -59,7 +58,7 @@
 <!-- partial -->
 <script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/vuetify@1.5.14/dist/vuetify.min.js'></script>
-</script><script  src="./scripts/representants.js"></script>
+<script  src="./scripts/representants.js"></script>
 
 </body>
 </html>
