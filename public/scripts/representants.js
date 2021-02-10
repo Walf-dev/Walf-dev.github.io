@@ -2,126 +2,140 @@ new Vue({
   el: '#app',
   data: () => ({
     pagination: {
-      sortBy: 'name' },
+      sortBy: 'ville' },
 
     selected: [],
     search: '',
     isMobile: false,
     headers: [{
-      text: 'Dessert (100g serving)',
+      text: 'Villes (Indication)',
       align: 'left',
-      value: 'name' },
+      value: 'ville' },
 
     {
-      text: 'Calories',
-      value: 'calories' },
+      text: 'Représentants',
+      value: 'representants' },
 
     {
-      text: 'Fat (g)',
-      value: 'fat' },
-
-    {
-      text: 'Carbs (g)',
-      value: 'carbs' },
-
-    {
-      text: 'Protein (g)',
-      value: 'protein' },
-
-    {
-      text: 'Iron (%)',
-      value: 'iron' }],
+      text: 'Contacts',
+      value: 'contacts' }],
 
 
-    desserts: [{
+    villes: [{
       value: false,
-      name: 'Frozen Yogurt',
-      calories: 159,
-      fat: 6.0,
-      carbs: 24,
-      protein: 4.0,
-      iron: '1%' },
+      ville: 'Yaoundé (Emana)',
+      representants: "Ngono Barbara",
+      contacts: 651625176},
 
     {
       value: false,
-      name: 'Ice cream sandwich',
-      calories: 237,
-      fat: 9.0,
-      carbs: 37,
-      protein: 4.3,
-      iron: '1%' },
+      ville: 'Yaoundé (Essos)',
+      representants: "Mani Michel",
+      contacts: 655601362},
 
     {
       value: false,
-      name: 'Eclair',
-      calories: 262,
-      fat: 16.0,
-      carbs: 23,
-      protein: 6.0,
-      iron: '7%' },
+      ville: 'Yaoundé (Biyem-Assi)',
+      representants: "Kamga Yvan",
+      contacts: 682095349},
 
     {
       value: false,
-      name: 'Cupcake',
-      calories: 305,
-      fat: 3.7,
-      carbs: 67,
-      protein: 4.3,
-      iron: '8%' },
+      ville: 'Yaoundé (Mimboman)',
+      representants: "Dani space's",
+      contacts: 657546726},
 
     {
       value: false,
-      name: 'Gingerbread',
-      calories: 356,
-      fat: 16.0,
-      carbs: 49,
-      protein: 3.9,
-      iron: '16%' },
+      ville: 'Douala (Kotto)',
+      representants: "Andréa",
+      contacts: 650437172},
 
     {
       value: false,
-      name: 'Jelly bean',
-      calories: 375,
-      fat: 0.0,
-      carbs: 94,
-      protein: 0.0,
-      iron: '0%' },
+      ville: 'Douala (Bessengue)',
+      representants: "Néhemie",
+      contacts: 690483337},
 
     {
       value: false,
-      name: 'Lollipop',
-      calories: 392,
-      fat: 0.2,
-      carbs: 98,
-      protein: 0,
-      iron: '2%' },
+      ville: 'Douala (Nyalla)',
+      representants: "Doriane",
+      contacts: 652673305},
 
     {
       value: false,
-      name: 'Honeycomb',
-      calories: 408,
-      fat: 3.2,
-      carbs: 87,
-      protein: 6.5,
-      iron: '45%' },
+      ville: 'Douala (Bali)',
+      representants: "M&B HOME BEAUTY",
+      contacts: 690341170},
 
     {
       value: false,
-      name: 'Donut',
-      calories: 452,
-      fat: 25.0,
-      carbs: 51,
-      protein: 4.9,
-      iron: '22%' },
+      ville: 'Douala (Logbaba)',
+      representants: "INSTITUT DE BEAUTÉ BELLE IMAGE",
+      contacts: 690481428},
 
     {
       value: false,
-      name: 'KitKat',
-      calories: 518,
-      fat: 26.0,
-      carbs: 65,
-      protein: 7,
-      iron: '6%' }] }),
+      ville: 'Edea',
+      representants: "Berthe",
+      contacts: 690404297},
+
+      {
+        value: false,
+        ville: 'Edea',
+        representants: "Audrey",
+        contacts: 699395322},
+
+        {
+          value: false,
+          ville: 'Ngaoundere',
+          representants: "Ben Abdel Aziz ",
+          contacts: 674080943},
+
+          {
+            value: false,
+            ville: 'Ngaoundere',
+            representants: "Arthur",
+            contacts: 694986775},
+
+            {
+              value: false,
+              ville: 'Gabon',
+              representants: "Stanislas",
+              contacts: +24102703153},
+
+              {
+                value: false,
+                ville: 'Bertoua',
+                representants: "Marie",
+                contacts: 650449655 },
+
+                {
+                  value: false,
+                  ville: 'Nsangmelima',
+                  representants: "Beleza",
+                  contacts: 673203012},
+
+                  {
+                    value: false,
+                    ville: 'Tchad',
+                    representants: "Fatime Ndodi",
+                    contacts: +23565401965},
+
+                    {
+                      value: false,
+                      ville: 'Limbe',
+                      representants: "Patrice",
+                      contacts: 674257243},
+
+                        {
+                          value: false,
+                          ville: 'Bafoussam',
+                          representants: "Teukoua Caleb",
+                          contacts: 699147331}
+                    
+    ] }),
 
 
 
