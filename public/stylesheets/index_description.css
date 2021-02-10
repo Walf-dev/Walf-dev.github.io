@@ -159,15 +159,7 @@
       padding-right: 10px;
     color: rgb(255, 6, 255);
   }
-  .block {
-      width: 70px;
-      height: 5px;
-      background: #e55d87; /* Old browsers */
-      background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-      background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-      background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-      margin-bottom: 50px;
-  }/* Typography
+  /* Typography
   ********************************************************************* */
   h1, h2, h3, h4, h5, h6 {
       margin-top: 0;
