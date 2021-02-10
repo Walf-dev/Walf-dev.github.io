@@ -2,12 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="./images/borrador-logo.jpg" type="jpg" sizes="18x18" class="img-rounded">
   <title>Borrador | Représentants</title>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@1.5.14/dist/vuetify.min.css'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'>
+<link rel="icon" href="./images/borrador-logo.jpg" type="jpg" sizes="18x18" class="img-rounded">
   <link rel="stylesheet" href="./stylesheets/representants.css">
 </head>
+
 <body>
 <!-- partial:index.partial.html -->
 <%- include about %>
@@ -15,7 +16,7 @@
 <div id="app">
     <v-app id="inspire">
       <v-toolbar dark color="success" fixed>
-        <v-toolbar-title class="white--text"><a href="/"><img src="./images/borrador-logo.jpg" alt="borrador" class="img-fluid rounded logo"></a> Représentants</v-toolbar-title>
+        <v-toolbar-title class="white--text">Représentants</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-text-field v-model="search" append-icon="search" label="Rechercher..." single-line hide-details></v-text-field>
         <v-menu offset-y :nudge-left="170" :close-on-content-click="false">
