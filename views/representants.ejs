@@ -9,10 +9,14 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'>
 <link rel="icon" href="./images/borrador-logo.jpg" type="jpg" sizes="18x18" class="img-rounded">
   <link rel="stylesheet" href="./stylesheets/representants.css">
+  <link rel="stylesheet" href="./stylesheets/home.css">
+  <link rel="stylesheet" href="./stylesheets/footer.css">
+
 </head>
 
 <body>
 <!-- partial:index.partial.html -->
+<%- include about %>
 
 <div id="app">
     <v-app id="inspire">
@@ -56,11 +60,13 @@
           </v-layout>
     </v-app>
   </div>
+  <%- include footer %>
 
 <!-- partial -->
 <script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/vuetify@1.5.14/dist/vuetify.min.js'></script>
 <script  src="./scripts/representants.js"></script>
+<script  src="./scripts/home.js"></script>
 
 </body>
 </html>
