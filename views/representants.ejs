@@ -34,9 +34,9 @@
             <v-data-table :headers="headers" :items="villes" :search="search" :pagination.sync="pagination" :hide-headers="isMobile" :class="{mobile: isMobile}">
               <template slot="items" slot-scope="props">
                 <tr v-if="!isMobile">
-                  <td>{{ props.item.ville }}</td>
-                  <td>{{ props.item.representants }}</td>
-                  <td>{{ props.item.contacts }}</td>
+                  <td class="text-xs-right">{{ props.item.ville }}</td>
+                  <td class="text-xs-right">{{ props.item.representants }}</td>
+                  <td class="text-xs-right">{{ props.item.contacts }}</td>
                 </tr>
                 <tr v-else>
                   <td>
