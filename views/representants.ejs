@@ -27,6 +27,7 @@
         <v-toolbar-title class="white--text"><a href="/"><img src="./images/borrador-logo.jpg" alt="borrador" class="img-fluid rounded borrador"></a> </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-text-field v-model="search" append-icon="search" label="Rechercher ville" single-line hide-details></v-text-field>
+        <%- include index_nav %>
       </v-toolbar>
           <v-layout v-resize="onResize" column style="padding-top:56px">
             <v-data-table :headers="headers" :items="villes" :search="search" :pagination.sync="pagination" :hide-headers="isMobile" :class="{mobile: isMobile}">
